@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300" style="border: 2px solid black"></canvas>
+    <script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    //toit de la maison
+    ctx.beginPath();
+    ctx.moveTo(150,15);//en haut
+    ctx.lineTo(70,100);//a gauche
+    ctx.lineTo(230,100);//a droite
+    ctx.fillStyle = "#D7823D";
+    ctx.fill();
+    //maison
+    ctx.beginPath()
+    ctx.moveTo(70,100);//en haut a gauche
+    ctx.lineTo(70,260);//en bas a gauche
+    ctx.lineTo(230,260);//en bas a droite
+    ctx.lineTo(230,100);//en haut a droite
+    ctx.fillStyle = "#A1D8E6";
+    ctx.fill();
+    //fenetre gauche
+    ctx.beginPath();
+    ctx.moveTo(85,115);//en haut a gauche
+    ctx.lineTo(85,150);//en bas a gauche
+    ctx.lineTo(120,150);//en bas a droite
+    ctx.lineTo(120,115);//en haut a droite
+    ctx.fillStyle = "#C9C9C9";
+    ctx.fill();
+    //fenetre droite
+    ctx.beginPath();
+    ctx.moveTo(215,115);//en haut a droite
+    ctx.lineTo(215,150);//en bas a droite
+    ctx.lineTo(180,150);//en bas a gauche
+    ctx.lineTo(180,115);//en haut a gauche
+    ctx.fillStyle = "#C9C9C9";
+    ctx.fill();
+    //porte
+    ctx.beginPath();
+    ctx.moveTo(130,260);//en bas a gauche
+    ctx.lineTo(130,200);//en haut a gauche
+    ctx.lineTo(170,200);//en haut a droite
+    ctx.lineTo(170,260);//en bas a droite
+    ctx.fillStyle = "#C9C9C9";
+    ctx.fill();
+    </script>
+  </body>
+</html>
